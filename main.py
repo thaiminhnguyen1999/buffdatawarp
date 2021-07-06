@@ -6,8 +6,8 @@ import string
 import time
 import os
 import sys
-script_version = '1.1'
-window_title   = f"Buff dung lượng Cloudflare WARP+ by Nguyễn Ngọc Thiện (phiên bản {script_version})"
+script_version = '1.2'
+window_title   = f"Buff dung lượng Cloudflare WARP+ by Nguyễn Ngọc Thiện - Phiên bản script: {script_version}"
 os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
 print ("----------------------------------------------------------------")
@@ -27,13 +27,13 @@ def progressBar():
 	while True:
 		for i in range(10):
 			percent += 1
-			sys.stdout.write(f"\r[+] Đang chờ phản hồi từ máy chủ...  " + save_anim + f" {percent}%")
+			sys.stdout.write(f"\r[+] Chờ phản hồi từ máy chủ...  " + save_anim + f" {percent}%")
 			sys.stdout.flush()
 			time.sleep(0.075)
 		progress_anim += 1
 		save_anim = animation[progress_anim % len(animation)]
 		if percent == 100:
-			sys.stdout.write("\r[+] Lệnh hoàn thành [■■■■■■■■■■] 100%")
+			sys.stdout.write("\r[+] Lệnh đã được hoàn thành! ")
 			break
 
 def genString(stringLength):
@@ -82,24 +82,24 @@ while True:
 	print("")
 	print("                  Buff dung lượng Cloudflare WARP+" + " by Nguyễn Ngọc Thiện")
 	print("")
-	sys.stdout.write("\r[+] Đang gửi lệnh đến máy chủ...   [□□□□□□□□□□] 0%")
+	sys.stdout.write("\r[+] Đang thực thi lệnh...   [□□□□□□□□□□] 0%")
 	sys.stdout.flush()
 	result = run()
 	if result == 200:
 		g += 1
 		progressBar()
-		print(f"\n[-] WARP+ ID của bạn: {referrer}")    
-		print(f"[:)] Đã thêm {g} GB vào tài khoản WARP+ của bạn.")
+		print(f"\n[*] WARP+ ID của bạn: {referrer}")    
+		print(f"[+] Đã thêm {g} GB vào tài khoản WARP+ của bạn.")
 		print(f"[#] Tổng cộng: {g} lần thành công; {b} lần thất bại")
 		for i in range(15,0,-1):
-			sys.stdout.write(f"\r[*] Sau {i} giây, 1 lệnh mới sẽ được gửi đi.")
+			sys.stdout.write(f"\r[*] Sau {i} giây, lệnh mới sẽ được thực thi.")
 			sys.stdout.flush()
 			time.sleep(1)
 	else:
 		b += 1
-		print("[:(] Không thể kết nối đến server.")
+		print("[-] Không thể kết nối đến server, có thể do server đang quá tải.")
 		print(f"[#] Tổng cộng: {g} lần thành công; {b} lần thất bại")
 		for i in range(10,0,-1):
-			sys.stdout.write(f"\r[*] Gửi lệnh lại sau {i} giây...")
+			sys.stdout.write(f"\r[*] Thực thi lại lệnh sau {i} giây...")
 			sys.stdout.flush()
 			time.sleep(1)
