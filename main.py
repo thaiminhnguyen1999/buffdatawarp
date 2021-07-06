@@ -6,13 +6,13 @@ import string
 import time
 import os
 import sys
-script_version = '1.0.0'
-window_title   = f"BUFF DUNG LUONG CLOUDFLARE WARP++(version {script_version})"
+script_version = '1.1'
+window_title   = f"Buff dung lượng Cloudflare WARP+ by Nguyễn Ngọc Thiện (phiên bản {script_version})"
 os.system('title ' + window_title if os.name == 'nt' else 'PS1="\[\e]0;' + window_title + '\a\]"; echo $PS1')
 os.system('cls' if os.name == 'nt' else 'clear')
-print ("-----------------------------------------------------------------")
+print ("----------------------------------------------------------------")
 print ("|    BUFF DUNG LƯỢNG CLOUDFLARE WARP+ BY NGUYỄN NGỌC THIỆN     |")
-print ("-----------------------------------------------------------------")
+print ("----------------------------------------------------------------")
 print (f"Phiên bản script: {script_version}")
 print ("-----------------------------------------------------------------")
 print ("Mọi lỗi về script xin được báo lỗi bằng cách inbox qua GitHub") 
@@ -91,7 +91,7 @@ while True:
 		print(f"\n[-] WARP+ ID của bạn: {referrer}")    
 		print(f"[:)] Đã thêm {g} GB vào tài khoản WARP+ của bạn.")
 		print(f"[#] Tổng cộng: {g} lần thành công; {b} lần thất bại")
-		for i in range(20,0,-1):
+		for i in range(15,0,-1):
 			sys.stdout.write(f"\r[*] Sau {i} giây, 1 lệnh mới sẽ được gửi đi.")
 			sys.stdout.flush()
 			time.sleep(1)
