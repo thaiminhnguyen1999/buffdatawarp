@@ -1,5 +1,5 @@
 # Forked from: [ALIILAPRO](https://github.com/ALIILAPRO/warp-plus-cloudflare)
-# Script tăng dung lượng Cloudflare WARP+ - by Nguyen Ngoc Thien
+# Script tăng dung lượng Cloudflare WARP+ 
 ## Một script tự động giúp bạn tăng dung lượng của tài khoản WARP+ bằng cách <s> tự tay share với bạn bè </s> tự động share và tăng dung lượng.
 ### Làm sao để chạy script này?
 - Bạn có thể chạy script này trên chính trình duyệt của bạn (khuyến khích Chrome hoặc Chromium-based) thông qua [Replit](https://replit.com/@NgcThinThin1/buffdatawarp#main.py), hoặc chạy ngay trên máy tính của bạn qua Python.
