@@ -1,3 +1,4 @@
+# Forked from: [ALIILAPRO](https://github.com/ALIILAPRO/warp-plus-cloudflare)
 # Script tăng dung lượng Cloudflare WARP+ - by Nguyen Ngoc Thien
 ## Một script tự động giúp bạn tăng dung lượng của tài khoản WARP+ bằng cách <s> tự tay share với bạn bè </s> tự động share và tăng dung lượng.
 ### Làm sao để chạy script này?
